@@ -54,5 +54,57 @@ CREATE TABLE admins (
 
 -- Insert default admin
 INSERT INTO admins (email, password) VALUES ('admin@example.com', 'admin123');
+```
 
+> You can also populate the `candidates` table manually.
 
+## 🚀 How to Run
+
+1. Clone this repository.
+2. Ensure the JDBC driver `.jar` is in your classpath.
+3. Update the **image paths** and **database credentials** in the `v2.java` file:
+   ```java
+   String url = "jdbc:mysql://localhost:3306/votingsystem";
+   String user = "root";
+   String password = "your_password_here";
+   ```
+4. Compile and run the program:
+
+```bash
+javac v2.java
+java v2
+```
+
+## 🖼️ Images and Icons
+
+Ensure the following image files are available and their paths are correct:
+
+- `bg.jpg` (Main menu background)
+- `voter.jpg` (Voter login icon)
+- `admin.jpg` (Admin login icon)
+- `reg.jpg` (Registration icon)
+
+You can place them in a known location or embed them as resources.
+
+## ✅ Functionality Flow
+
+1. **Main Menu** → Choose to Vote, Register, Admin Login, or Exit.
+2. **Register** → Inputs Name, Age, Password → Generates unique Voter ID.
+3. **Voter Login** → Verifies credentials and voting eligibility.
+4. **Vote** → Displays list of candidates → One vote allowed.
+5. **Admin Login** → Admin can view voters, results, or reset the system.
+
+## 🧠 Future Improvements
+
+- Password encryption (currently plain text).
+- Input validation enhancements.
+- Candidate management via admin panel.
+- Export results to CSV/PDF.
+
+## 📄 License
+
+This project is licensed under the MIT License.
+
+---
+
+> **Note:** Always use secure practices when handling passwords and sensitive data in production environments.
