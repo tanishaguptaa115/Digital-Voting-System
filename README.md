@@ -55,17 +55,4 @@ CREATE TABLE admins (
 -- Insert default admin
 INSERT INTO admins (email, password) VALUES ('admin@example.com', 'admin123');
 
-You can also populate the candidates table manually.
 
-🚀 How to Run
-Clone this repository.
-
-Ensure the JDBC driver .jar is in your classpath.
-
-Update the image paths and database credentials in the v2.java file:
-
-String url = "jdbc:mysql://localhost:3306/votingsystem";
-String user = "root";
-String password = "your_password_here";
-
-Compile and run the program:
