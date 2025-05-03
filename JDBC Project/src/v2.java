@@ -26,7 +26,7 @@ public class v2 {
             String url = "jdbc:mysql://localhost:3306/votingsystem";
 
             String user = "root";
-            String password = "HomeW098()@234";
+            String password = "your password here";
             connection = DriverManager.getConnection(url, user, password);
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Database connection error: " + e.getMessage());
