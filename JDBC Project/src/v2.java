@@ -267,7 +267,8 @@ public class v2 {
     }
     
 
-    private void showAdminMenu() {
+    // provides the authentication.
+    private void showAdminMenu() {    
         String[] options = {"View Voters", "View Results", "Reset Votes", "Back"};
         int choice = JOptionPane.showOptionDialog(frame, "Choose an admin option", "Admin Menu",
                 JOptionPane.DEFAULT_OPTION, JOptionPane.PLAIN_MESSAGE, null, options, options[0]);

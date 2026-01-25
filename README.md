@@ -106,5 +106,11 @@ You can place them in a known location or embed them as resources.
 This project is licensed under the MIT License.
 
 ---
+## Contributor – Tamanna Arora
+
+- Designed and improved GUI components using Java Swing
+- Assisted in JDBC–MySQL integration for database connectivity
+- Enhanced user interaction flow and form validations
+
 
 > **Note:** Always use secure practices when handling passwords and sensitive data in production environments.
